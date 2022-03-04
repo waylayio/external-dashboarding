@@ -1,0 +1,45 @@
+#cover { position: fixed; height: 100%; width: 100%; top:0; left: 0; background: #FFF; z-index:9999;}
+
+.ui-autocomplete {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    cursor: default; 
+    color: white;  
+/*    background-color: #fff;*/
+    padding:3px;
+    /*border: 1px solid #ccc*/
+}
+
+.ui-autocomplete > li.ui-state-focus {
+  background-color: #FF6C00;
+}
+
+button:hover {
+    background-color : rgba(26, 13, 3, 0.26);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.popup {
+  position: fixed;
+  display: inline-block;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  box-shadow: rgb(38, 57, 77) 0px 10px 10px -5px;
+} 
+
+.btn-color{
+  background-color: #0e1c36;
+  color: #fff;
+}
+
+.page-wrapper {
+  max-width: 900px;
+  margin: auto;
+}

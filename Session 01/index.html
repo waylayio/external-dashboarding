@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Waylay Demo</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="row" id="formConnect">
+      <div class="col-md-6 offset-md-3">
+        <div class="card my-5">
+          <div class="card-body cardbody-color p-lg-5">
+            <div class="text-center">
+              <img src="https://global-uploads.webflow.com/600af1353f91b9eff1de3e74/614ae65291c6d045b3140bea_OTO%20Logo.png" class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3"
+              width="200px" alt="profile">
+            </div>
+
+            <div class="mb-3">
+              <input type="text" class="form-control" id="user" aria-describedby="emailHelp"
+              placeholder="User Name">
+            </div>
+
+            <div class="mb-3">
+              <input type="password" class="form-control" id="pwd" placeholder="password">
+            </div>
+
+            <div class="text-center">
+              <button type="submit" class="btn btn-color px-5 mb-5 w-100" id="btnFormConnect">Login</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>    
+
+  <div id="app" class="page-wrapper">
+    <main class="page-content">
+      <div class="container-fluid">
+
+        <div id="dashboards_">
+
+          <h1>Dashboard</h1>
+
+          <div>
+            <canvas id="my-simple-chart"></canvas>
+          </div>
+
+          <select name="time" id="time">
+            <option value="PT1M">last minute</option>
+            <option value="PT15M">15 minutes</option>
+            <option value="PT30M">30 minutes</option>
+            <option value="PT60M">1 hour</option>
+            <option selected value="P1D">1 day</option>
+            <option value="P1M">1 month</option>
+            <option value="P1Y">1 year</option>
+          </select>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+
+
+  <script src="https://unpkg.com/@waylay/client/dist/waylay.umd.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.bundle.js"></script>
+  <script src="https://unpkg.com/chartjs-gauge@0.3.0/dist/chartjs-gauge.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
